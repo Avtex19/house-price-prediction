@@ -1,0 +1,27 @@
+{
+  "target_column": "MedHouseVal",
+  "feature_columns": [
+    "MedInc",
+    "HouseAge",
+    "AveRooms",
+    "AveBedrms",
+    "Population",
+    "AveOccup",
+    "Latitude",
+    "Longitude",
+    "BedroomsPerRoom",
+    "RoomsPerPerson",
+    "RoomsMinusBedrooms"
+  ],
+  "engineered_features": [
+    "BedroomsPerRoom",
+    "RoomsPerPerson",
+    "RoomsMinusBedrooms"
+  ],
+  "outlier_removal": "IQR method (factor=3.0)",
+  "scaler": "StandardScaler()",
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42
+  }
+}
